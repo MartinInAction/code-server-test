@@ -36,6 +36,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
+RUN npm install -g eslint typescript expo-cli @expo/ngrok@^4.1.0
+RUN node --version && npm --version
+
+
 # -----------
 
 # Port
